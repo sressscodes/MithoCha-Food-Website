@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+nav{
+  background: rgb(255, 255, 255);
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  z-index: 1;
+}
+.logo{
+  height: 75px;
+  padding: 0 30px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 16px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  background: crimson;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover{
+  background-color: rgb(255, 75, 20);
+  text-decoration: none;
+  color: white;
+}
+nav ul li a i{
+  color: #ffffff; 
+  font-size: 15px; 
+  margin-right: 5px;
+  cursor: pointer;
+}
+nav ul li a i:hover{
+  background-color: rgb(255, 75, 20);
+  text-decoration: none;
+  color: white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: crimson;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.pamplet{
+  position: relative;
+}
+.pamplet img{
+  width: 100%;
+}
+.ptext{
+  position: absolute;
+  top: 36%;
+  left: 5%;
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 0 0 5px rgb(186, 78, 11), 0 0 20px rgb(186, 78, 11);
+} 
+.ntext{
+  position: absolute;
+  top: 36%;
+  left: 80%;
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 0 0 5px rgb(186, 78, 11), 0 0 20px rgb(186, 78, 11);
+} 
+.cart{                                                          /*Cart*/
+  position: absolute;
+  z-index: 2;
+  top: 88%;
+  left: 92%;
+  cursor: pointer;
+}
+
+.cart a{
+  color: white;
+}
+
+.cart i{
+  position: fixed;
+  background-color: crimson;
+  padding: 20px 20px 20px 20px;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+@media (max-width: 944px) {
+  .logo{
+    line-height: 60px;
+    padding: 3px 0px 0 20px;
+  }
+  nav ul li a{
+    font-size: 12px;
+  }
+  .fa-solid.fa-user{
+    font-size: 25px;
+  }
+  nav ul li input{
+    padding: 6px 20px;
+  }
+  nav ul li a i{
+    font-size: 13px;
+  }
+  .cart{
+    top: 86%;
+    left: 90%;
+  }
+  .ptext{
+    left: 4%;
+    font-size: 22px;
+  } 
+  .ntext{
+    font-size: 22px;
+  } 
+  .productlist{
+    width: 45%;
+  }
+  .menu-container h1{
+    font-size: 45px;
+    margin-left: 40px;
+  }
+  .productlist ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+
+  }
+  nav ul li a{
+    font-size: 17px;
+  }
+  .checkbtn:hover{
+    color: rgb(255, 75, 20);
+  }
+  nav ul li a i{
+    font-size: 15px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .cart{
+    top: 88%;
+    left: 84%;
+  }
+  .container{
+    padding-top: 60px;
+  }
+  .ptext{
+    left: 9%;
+    font-size: 11px;
+  } 
+  .ntext{
+    font-size: 11px;
+  } 
+  .productlist{
+    width: 100%;
+    padding: 0;
+  }
+  .menu-container h1{
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 45px;
+  }
+}
