@@ -8,8 +8,11 @@
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/menu.css">
   <link rel="stylesheet" href="./css/about-us.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
+
 <body>
   <nav>
     <input type="checkbox" id="check">
@@ -33,9 +36,147 @@
     <div class="top-menu-pic">
       <img src="./images/restaurant.jpeg"> 
     </div>
-    <h1 style="text-align: center; margin: 0 auto; width: 85%; text-align: left; margin-top: 30px;">Our Team</h1>
+    <h1 style="text-align: center; margin: 0 auto; width: 85%; text-align: left; margin-top: 30px;">About Us</h1>
   </div>
 
+  <div class="about-us-container">
+    <div class="word-content">
+      <h2>Welcome to Mitho Cha!</h2>
+      <p>
+        Mitho Cha is the fastest, easiest and most convenient way to enjoy the best food of your favourite restaurants at home, at the office or wherever you want to. We know that your time is valuable and sometimes every minute in the day counts. That’s why we deliver! So you can spend more time doing the things you love.
+      </p>
+    </div>
+    <div class="img-content">
+      <img src="./images/restaurant0.webp">
+    </div>
+  </div>
+
+  <div class="topic">
+    <h1>Gallery</h1>
+  </div>
  
+  <div class="mithocha-gallery">
+    <div class="pic place" >
+      <img src="./images/restaurant2.jpeg">
+    </div>
+    <div class="pic mid">
+      <img src="./images/restaurant1.jpeg">
+    </div>
+    <div class="pic rar">
+      <img src="./images/restaurant1.jpeg">
+    </div>
+    <div class="pic waf">
+      <img src="./images/restaurant2.jpeg">
+    </div>
+  </div>
+
+  <div class="topic">
+    <h1>Meet our Team</h1>
+  </div>
+
+  <div class="team-slide">
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+  
+              <div class="card-image">
+                <img src="./images/profile/profile1.jpg" alt="" class="card-img">     <!--First-->
+              </div>
+            </div>
+  
+            <div class="card-content">
+              <h3 class="position">Culinary Director</h3>
+              <h6 class="name">Gordon Ramsay</h6>
+              <p class="description">"If you want to become a great chef, you have to work with great chefs. And that's exactly what I did."</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+  
+              <div class="card-image">
+                <img src="./images/profile/profile2.jpeg" alt="" class="card-img">      <!--Second-->
+              </div>
+            </div>
+  
+            <div class="card-content">
+              <h3 class="position">Ceo</h3>
+              <h6 class="name">David James</h6>
+              <p class="description">"To me, there's no great chef without a great team."</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+  
+              <div class="card-image">
+                <img src="./images/profile/profile3.jpg" alt="" class="card-img">       <!--Third-->
+              </div>
+            </div>
+  
+            <div class="card-content">
+              <h3 class="position">Head Chef</h3>
+              <h6 class="name">Elizabeth Briggs</h6>
+              <p class="description">"Chefs don't make mistakes, they make new dishes."</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+  
+              <div class="card-image">
+                <img src="./images/profile/profile4.jpeg" alt="" class="card-img">       <!--Fourth-->
+              </div>
+            </div>
+  
+            <div class="card-content">
+              <h3 class="position">General Manager</h3>
+              <h6 class="name">Ferran Adrian</h6>
+              <p class="description">"What you feel like eating at any given moment is what you should have."</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+  
+              <div class="card-image">
+                <img src="./images/profile/profile5.jpg" alt="" class="card-img">       <!--Fifth-->
+              </div>
+            </div>
+  
+            <div class="card-content">
+              <h3 class="position">Chef</h3>
+              <h6 class="name">Cristina Martínez</h6>
+              <p class="description">“What motivates me is to leave a legacy. We need to learn to educate people and set an example.”</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+  
+              <div class="card-image">
+                <img src="./images/profile/profile6.jpg" alt="" class="card-img">        <!--Sixth-->
+              </div>
+            </div>
+  
+            <div class="card-content">
+              <h3 class="position">Chef</h3>
+              <h6 class="name">Ronit Chaudhary</h6>
+              <p class="description">"Chefs don't make mistakes, they make new dishes."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
 </body>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
 </html>
