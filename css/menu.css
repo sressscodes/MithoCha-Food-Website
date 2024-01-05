@@ -95,8 +95,7 @@
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
-  padding-top: 10px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.2), 0 10px 10px rgba(0,0,0,0.2);
   transition: .4s;
   background: #f2f2f2;
 }
@@ -108,6 +107,7 @@
 
 .productlist img{
   width: 100%;
+  height: 150px;
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -172,6 +172,12 @@
   background-color: rgb(255, 75, 20);
 }
 
+@media (max-width: 1080px) {
+  .productlist h3{
+    height: 70px;
+  }
+}
+
 @media (max-width: 978px){
   .menu-top{
     width: 90%;
@@ -194,6 +200,7 @@
   }
   .productlist h3{
     font-size: 22px;
+    height: auto;
   }
   .productlist p{
     font-size: 15px;

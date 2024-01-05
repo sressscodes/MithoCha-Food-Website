@@ -22,7 +22,7 @@ nav{
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 .logo{
   height: 75px;
@@ -49,7 +49,7 @@ nav ul li a{
 nav ul li a:hover{
   background-color: rgb(255, 75, 20);
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 nav ul li a i{
   color: #ffffff; 
@@ -105,7 +105,7 @@ nav ul li a i:hover{
 }
 
 .cart a{
-  color: white;
+  color: white !important;
 }
 
 .cart i{
@@ -116,7 +116,98 @@ nav ul li a i:hover{
   font-size: 20px;
 }
 
-@media (max-width: 944px) {
+.footer-container{
+  max-width: 80%;
+  margin: auto;
+  line-height: 1.5;
+  font-family: "Roboto-slab";
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer{
+  margin-top: 60px;
+  background-color: #24262b;
+  padding: 60px 0 30px 0;
+}
+
+.footer-col{
+  width: auto;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: crimson;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 19px;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+  color: #ffffff;
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+  background-color: crimson;
+}
+
+.copyright{
+    width: 100%;
+    margin-top: 45px;
+    font-family: "Roboto-slab";
+    color: #afafaf;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width: 978px) {
   .logo{
     line-height: 60px;
     padding: 3px 0px 0 20px;
@@ -158,9 +249,13 @@ nav ul li a i:hover{
   align-items: center;
   padding: 0;
   }
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
 }
 
-@media (max-width: 858px) {
+@media screen and (max-width: 758px) {
   .checkbtn{
     display: block;
   }
@@ -207,12 +302,34 @@ nav ul li a i:hover{
     font-size: 11px;
   } 
   .productlist{
-    width: 100%;
+    width: 70% !important;
     padding: 0;
   }
   .menu-container h1{
     font-size: 40px;
     margin-left: 40px;
     margin-top: 45px;
+  }
+  .footer-col{
+    width: 100%;
+  }
+  .footer-col h4{
+    font-size: 16px;
+  }
+  .footer-col ul{
+    background-color: transparent;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    height: auto;
+    text-align: left;
+    z-index: 0;
+  }
+  .footer-col ul li a{
+    font-size: 12px;
+  }
+  .copyright{
+    font-size: 11px;
   }
 }
