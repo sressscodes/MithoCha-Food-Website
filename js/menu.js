@@ -1,6 +1,6 @@
 const searchInput = document.getElementById('search-food');
 const searchButton = document.getElementById('search-button');
-const gallery = document.getElementById('gallery');
+const gallery = document.getElementById('products-food');
 
 function performSearch() {
   const searchTerm = searchInput.value.toLowerCase();
@@ -10,6 +10,7 @@ function performSearch() {
     const productTitle = productElement.querySelector('h3').textContent.toLowerCase();
     if (productTitle.includes(searchTerm)) {
       productElement.style.display = 'block';
+
     } else {
       productElement.style.display = 'none';
     }

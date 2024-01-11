@@ -116,6 +116,37 @@ nav ul li a i:hover{
   font-size: 20px;
 }
 
+@keyframes loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.offer-loop{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.loop-slide{
+  font-family: "Roboto-slab";
+  background-color: crimson;
+  display: flex;
+  flex-direction: row;
+  animation: 6s loop infinite linear;
+}
+
+.loop-slide h2{
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 8px;
+  font-weight: 200;
+}
+
 .footer-container{
   max-width: 80%;
   margin: auto;
@@ -302,13 +333,18 @@ ul{
     font-size: 11px;
   } 
   .productlist{
-    width: 70% !important;
+    width: 65% !important;
     padding: 0;
   }
   .menu-container h1{
     font-size: 40px;
     margin-left: 40px;
     margin-top: 45px;
+  }
+  .loop-slide h2{
+    font-size: 16px;
+    white-space: 5px;
+    padding: 10px 5px;
   }
   .footer-col{
     width: 100%;

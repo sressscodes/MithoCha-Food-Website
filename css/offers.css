@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.flyer img{
+  width: 100%;
+  display: none;
+  padding-top: 60px;
+}
+.offer-buy{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  padding: 8px 22px;
+  border: 0;
+  background-color: crimson;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  font-family: 'roboto-slab';
+  transition: all 0.3s ease;
+}
+.offer-buy:hover{
+  background-color: rgb(255, 75, 20);
+}

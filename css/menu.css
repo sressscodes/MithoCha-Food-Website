@@ -51,6 +51,38 @@
   float: right;
 }
 
+.menu-categories{
+  background: #24262b;
+  height: 80px;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.menu-categories ul{
+  text-align: center;
+  margin: auto;
+}
+.menu-categories ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 16px;
+}
+.menu-categories ul li a{
+  color: white;
+  font-size: 17px;
+  background: crimson;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu-categories ul li a:hover{
+  background-color: rgb(255, 75, 20);
+  text-decoration: none;
+  color: #fff;
+}        
+
 .top-menu-pic img{
   width: 100%;
 }
@@ -66,10 +98,10 @@
 
 .productlist h3{
   text-align: center;
-  font-size: 27px;
-  font-weight: 700;
+  font-size: 23px;
+  font-weight: 600;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 20px;
   font-family: 'roboto-slab';
   margin-bottom: 5px;
 }
@@ -122,10 +154,10 @@
   font-family: 'roboto-slab';
 }
 .productlist h6{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
-  color: #222f3e;
+  color: #898c8e;
   margin: 0;
   margin-top: 15px;
 }
@@ -136,12 +168,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .productlist li{
-  padding: 13px;
+  margin-top: 20px;
 }
 .productlist li i{
-  font-size: 20px;
+  font-size: 18px;
 }
 .fa{
   transition: .4s;
@@ -155,21 +188,53 @@
 }
 .productlist button{
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   color: white;
-  padding: 8px 25px;
+  padding: 8px 22px;
   border: 0;
   background-color: crimson;
   outline: none;
   cursor: pointer;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   border-radius: 30px;
   font-family: 'roboto-slab';
   transition: all 0.3s ease;
 }
 .productlist button:hover{
   background-color: rgb(255, 75, 20);
+}
+
+.product-category h6{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-family: "Roboto-slab";
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fc9d46;
+  position: relative;
+}
+
+.product-category h6::before,
+.product-category h6::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 10%;
+  height: 2px;
+  background-color: #fc9d46;
+}
+
+.product-category h6::before {
+  left: 440px;
+  margin-top: 0px;
+}
+
+.product-category h6::after {
+  right: 440px;
+  margin-top: 0px;
 }
 
 @media (max-width: 1080px) {
