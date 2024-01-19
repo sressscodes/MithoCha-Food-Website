@@ -283,7 +283,7 @@ form{
   background: #fff;
   display: flex;
   flex-direction: column;
-  padding: 20px 30px;     /*jdnvijefnfgoewdnvoenvejvnerojv eojrnvreijnverjnverijjnvij ratooo part*/
+  padding: 20px 30px;     
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -357,6 +357,9 @@ form button:hover{
 }
 
 @media (max-width: 978px) {
+  .topic h1{
+    font-size: 40px;
+  }
   .menu-container h1{
     padding-left: 0px;
   }
@@ -391,7 +394,7 @@ form button:hover{
     margin-top: 60px;
   }
   .topic h1{
-    font-size: 40px;
+    font-size: 34px;
     font-weight: bold;
     color: crimson;
   }
@@ -411,7 +414,6 @@ form button:hover{
     display: none;
   }
   .smallscreen{
-    margin-top: 35px;
     display: block;
     display: flex;
     flex-direction: column;
@@ -429,7 +431,7 @@ form button:hover{
     margin-bottom: 5px;
   }
   .img-content {
-    margin-top: 35px;
+    margin-top: 60px;
     width: 80%;
     animation: fadeInUp 2s ease;
   }

@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,900&display=swap');
 
+.cart span{
+  font-size: 15px;
+  position: fixed;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  bottom: 60px;
+  right: 42px;
+  z-index: 4;
+}
+
 .menu-container{
   padding-top: 10px;
   background: rgb(255, 255, 255);
@@ -232,6 +248,9 @@
 }
 
 @media (max-width: 1250px) {
+  .cart span{
+    right: 32px;
+  }
   .productlist{
     width: 25%;
   }
@@ -245,6 +264,9 @@
 }
 
 @media (max-width: 1120px) {
+  .cart span{
+    right: 26px;
+  }
   .product-category h6::before {
     left: 310px;
   }
@@ -254,12 +276,23 @@
   }
 }
 
+@media (max-width: 1050px){
+  .cart span{
+    right: 20px;
+  }
+}
+
 @media (max-width: 978px){
+  .cart span{
+    bottom: 69px;
+    right: 24px;
+  }
   .menu-top{
     width: 80%;
   }
   .menu-container h1{
     margin-left: 5px;
+    font-size: 40px;
   }
   .search-box{
     margin-top: 38px;
@@ -303,6 +336,10 @@
   }
 }
 @media (max-width: 858px){
+  .cart span{
+    bottom: 74px;
+    right: 30px;
+  }
   .menu-top{
     width: 80%;
     margin: 0 auto;
@@ -370,6 +407,13 @@
   }
 }
 @media (max-width: 755px){
+  .cart span{
+    bottom: 60px;
+    right: 50px;
+  }
+  .menu-container h1{
+    font-size: 34px;
+  }
   .gallery{
     width: 80%;
   }
@@ -378,6 +422,9 @@
   }
 }
 @media (max-width: 730px){
+  .cart span{
+    right: 46px;
+  }
   .gallery{
     width: 90%;
   }
@@ -386,6 +433,9 @@
   }
 }
 @media (max-width: 700px){
+  .cart span{
+    right: 38px;
+  }
   .product-category h6::before {
     left: 140px;
   }
@@ -394,7 +444,15 @@
     right: 140px;
   }
 }
+@media (max-width: 600px){
+  .cart span{
+    right: 28px;
+  }
+}
 @media (max-width: 520px){
+  .cart span{
+    right: 20px;
+  }
   .product-category h6::before {
     left: 90px;
   }
@@ -404,6 +462,9 @@
   }
 }
 @media (max-width: 420px){
+  .cart span{
+    right: 10px;
+  }
   .menu-top{
     width: 80%;
   }
