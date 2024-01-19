@@ -130,6 +130,7 @@ nav ul li a i:hover{
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  background-color: crimson;
 }
 
 .loop-slide{
@@ -144,7 +145,47 @@ nav ul li a i:hover{
   color: #fff;
   font-size: 24px;
   padding: 10px 8px;
-  font-weight: 200;
+  font-weight: 300;
+}
+
+.logos{
+  background: #fff;
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+
+.logos::before, .logos::after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos::before{
+  left: 0;
+  background:linear-gradient(to left, transparent,#fff);
+}
+
+.logos::after{
+  right: 0;
+  background:linear-gradient(to right, transparent,#fff);
+}
+
+.logos-slide{
+  display: inline-block;
+  animation: 10s loop infinite linear;
+}
+
+.logos-slide img{
+  height: 90px;
+  margin-right: 40px;
 }
 
 .footer-container{
@@ -162,6 +203,64 @@ nav ul li a i:hover{
 
 ul{
   list-style: none;
+}
+
+.caption{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 60px auto;
+}
+
+.caption img{
+  width: 280px;
+  margin-right: 20px;
+}
+
+.thought-bubble {
+  display: flex;
+  flex-direction: row;
+}
+
+.small-bubble{
+  background-color: crimson;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-top: 160px;
+  margin-right: 30px;
+}
+
+.big-bubble{
+  background-color: crimson;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+
+.thought-text{
+  background-color: crimson;
+  border-radius: 48%;
+  width: 340px;
+  height: 185px;
+}
+
+.thought-text h6{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Roboto-slab";
+  padding: 0 40px;
+  font-weight: 600;
 }
 
 .footer{
@@ -280,6 +379,11 @@ ul{
   align-items: center;
   padding: 0;
   }
+  .loop-slide h2{
+    font-size: 19px;
+    padding: 9px 5px;
+    font-weight: 500;
+  }
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
@@ -342,10 +446,39 @@ ul{
     margin-top: 45px;
   }
   .loop-slide h2{
-    font-size: 16px;
-    white-space: 5px;
-    padding: 10px 5px;
+    font-size: 15px;
+    padding: 5px 5px;
+    font-weight: 500;
   }
+  .caption img{
+    width: 120px;
+    margin-right: 20px;
+  }
+  
+  .small-bubble{
+    width: 15px;
+    height: 15px;
+    margin-top: 80px;
+    margin-right: 10px;
+  }
+  
+  .big-bubble{
+    width: 25px;
+    height: 25px;
+    margin-top: 50px;
+    margin-right: 6px;
+  }
+  
+  .thought-text{
+    width: 180px;
+    height: 80px;
+  }
+  
+  .thought-text h6{
+    font-size: 10px;
+    padding: 0 30px;
+    font-weight: 600;
+  }  
   .footer-col{
     width: 100%;
   }

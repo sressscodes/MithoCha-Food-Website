@@ -25,3 +25,19 @@
 .offer-buy:hover{
   background-color: rgb(255, 75, 20);
 }
+
+@media (max-width: 978px) {
+  .offer-buy{
+    font-size: 18px;
+    padding: 8px 22px;
+  }
+}
+
+@media screen and (max-width: 758px){
+  .offer-buy{
+    font-size: 18px;
+    padding: 8px 22px;
+    display: flex;
+    margin: 25px auto 0 auto;
+  }
+}

@@ -7,20 +7,9 @@
   <title>Mitho Cha</title>
   <link rel="stylesheet" href="./css/index.css"> 
   <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/about-us.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
   <style>
-    .productlist button {
-      color: white;
-      padding: 13px 27px;
-      border: 0;
-      background-color: crimson;
-      outline: none;
-      cursor: pointer;
-      margin-top: 10px;
-      margin-bottom: 18px;
-      border-radius: 30px;
-      font-family: 'roboto-slab'
-    }
     .flyer img{
       width: 100%;
       display: none;
@@ -57,9 +46,12 @@
       </div>
     </div>
   </div>
+
+  <div class="topic" style="text-align: left;">
+    <h1>Trending Today</h1>
+  </div>
   
   <div class="menu-container">
-    <h1 style="text-align: center; margin: 0 auto; width: 85%; text-align: left; margin-top: 30px; padding-left: 4px;">Trending Today</h1>
     <div class="gallery">
   
       <div class="productlist">
@@ -154,22 +146,51 @@
   <div class="offer-loop">
     <div class="loop-slide">
       <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
-      <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
+      <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
       <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
       <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
     </div>
     <div class="loop-slide">
       <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
-      <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
+      <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
       <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
       <h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2><h2>Offer</h2>
     </div>
   </div>
 
-  <div class="caption">
-    <img src="./images/chef.png" >
+  <div class="topic">
+    <h1>Our Services</h1>
   </div>
 
+  <div class="caption">
+    <div class="picture">
+      <img class="caption-img" src="./images/chef.png" >
+    </div>
+    <div class="thought-bubble">
+      <div class="small-bubble"></div>
+      <div class="big-bubble"></div>
+      <div class="thought-text">
+        <h6>"Experience the speed of satisfaction! Place your order online, and we'll deliver it to your doorstep in no time!"</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <h1>Our Partners</h1>
+  </div>
+
+  <div class="logos">
+    <div class="logos-slide">
+      <img src="./images/partners/bhoj.png">
+      <img src="./images/partners/pathaofood.png">
+      <img src="./images/partners/daraz.png">
+      <img src="./images/partners/esewa.png">
+      <img src="./images/partners/pathaofood.png">
+      <img src="./images/partners/daraz.png">
+      <img src="./images/partners/khalti.png">
+    </div>
+  </div>
+ 
   <footer class="footer">
     <div class="footer-container">
       <div class="row">
@@ -217,5 +238,9 @@
   </footer>
 
   <script src="./js/offer.js"></script>
+  <script>
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector('.logos').appendChild(copy);
+  </script>
 </body>
 </html>
